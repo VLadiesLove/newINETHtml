@@ -1,0 +1,170 @@
+.congrats::-webkit-scrollbar{
+    display: none; 
+}
+.congrats{
+    height: 663px;
+    overflow: scroll;
+    margin-bottom: 19px;
+    padding: 0px 15px;
+    
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        margin: 28px 20px 28px 15px;
+    }
+
+    .active{
+        color: #0d7dff;
+        border-bottom: 2px solid #0d7dff;
+     }
+
+    &__header-item{
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #67707a;
+
+    }
+
+    &__today{
+        font-size: 14px;
+        color: #657880;
+        padding: 0px 0px 8px 15px;
+        border-bottom: 1px solid #f1f5fc;
+    }
+
+    &__upcoming{
+        margin: 43px 0px 0px 0px;
+        padding: 0px 0px 8px 16px;
+        font-family: Lato;
+        font-size: 14px;
+        color: #657880;
+        border-bottom: 1px solid #f1f5fc;
+    }
+
+}
+
+.congrats-item{
+    display: flex;
+    padding: 19px 15px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f5fc;
+    &__image{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 19px;
+
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__name{
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #031627;
+        margin-bottom: 5px;
+    }
+
+    &__info{
+        font-size: 14px;
+        line-height: 1.57;
+        color: #687a82;
+        margin-bottom: 5px;
+    }
+
+    &__city{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #687a82;
+    }
+
+    &__date{
+        font-size: 14px;
+        font-weight: bold;
+        color: #5c7079;
+        margin-bottom: 14px;
+    }
+
+    &__bottom{
+        display: flex;
+
+        &-image{
+            width: 17px;
+            height: 17px;
+            object-fit: contain;
+            margin-right: 3px;
+        }
+
+        &-text{
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #0d7dff;
+        }
+
+        &-text-wish{
+            margin-bottom: 10px;
+        }
+
+        .birthday{
+            display: none;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-left: -20px;
+
+            &__text-area{
+                padding: 8px 10px;
+                border: 1px solid #cdcecf;
+                height: 66px;
+                margin-bottom: 11px;
+            }
+
+            &__send{
+                color: #ffffff;
+                padding:3px 15px;
+                background-color: #0a7fff;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+
+        &-text:hover .birthday{display: flex;}
+    }
+
+}
+
+.congrats-item:hover{
+    background-color: rgba(10, 127, 255, 0.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width:1023px){
+    
+    .congrats{
+        height: auto;
+        padding: 0px 15px;
+        .congrats__header{
+            display: none;
+    
+        }
+        &__today{
+            display: none;
+        }
+
+        &__upcoming{
+            display: none;
+        }
+    }
+
+}
+

@@ -1,0 +1,44 @@
+.toolbox-button-wrapper{
+    position: fixed;
+    top: 209px;
+    right: 0px;
+    display: flex;
+    z-index: 100;
+    // align-items: center;
+}   
+
+.toolbox-button{
+    width: 59px;
+    height: 59px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #031627;;
+
+    &__image{
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text{
+        font-size: 12px;
+        text-align: right;
+        color: #ffffff;
+    }
+}
+
+.toolbox--active{
+    display: none;
+    margin-top: -120px;
+    align-self: flex-start;
+}
+
+.toolbox-button-wrapper:hover .toolbox--active{ display: block;} 
+.toolbox-button-wrapper:hover .toolbox-button{margin-right: -15px;}
+
+@media screen and (max-width: 1020px){
+    .toolbox-button-wrapper{
+        display: none;
+    }
+}

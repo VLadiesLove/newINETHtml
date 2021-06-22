@@ -1,0 +1,255 @@
+@import "global/fonts";
+@import "global/variables";
+@import "global/items";
+@import "global/reset";
+@import "global/typography";
+@import "global/ui";
+@import "./components/toolbox-fixed.scss";
+@import "./components/toolbox-opened.scss";
+@import "./components/header.scss";
+@import "./components/sidebar.scss";
+@import "./components/carousel.scss";
+@import "./components/carousel-mobile.scss";
+@import "./components/right-box-template.scss";
+@import "./components/story-item-mobile.scss";
+@import "./components/stories.scss";
+@import "./components/videos.scss";
+@import "./components/congrats.scss";
+@import "./components/calendar.scss";
+@import "./components/vacancies.scss";
+@import "./components/photos.scss";
+@import "./components/kc.scss";
+@import "./components/all-stories-button.scss";
+@import "./components/button-load-more.scss";
+@import "./components/bottom-mobile.scss";
+@import "./components/calendar-open.scss";
+@import "./components/category-page/category-page.scss";
+@import "./components/article-page/article-page.scss";
+@import "./components/search-page/search-page.scss";
+@import "./components/saved-stories-page/saved-stories.scss";
+@import "./components/mobile-menu.scss";
+
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-left: 86px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 767px){
+    .content-wrapper{
+        flex-direction: column;
+        .left-content{
+            align-items: center;
+        }
+    }
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    min-width: 330px;
+    margin-right: 1px;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 933px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1023px){
+    .left-content{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .left-content{
+        margin-right: 0px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .right-content{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .content-wrapper{
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .content-wrapper{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+}
+
+.celebrate{
+    position: absolute;
+    top: 400px;
+    right: 600px;
+    
+    
+    &__img{
+        opacity: 0.9;
+        border: 3px solid #fff ;
+        border-radius: 50%;
+        width: 260px;
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    &__star{
+        animation-name: opacity-star;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        width: 45px;       
+    }
+
+    &__star-1{
+        animation-name: opacity-star;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        width: 30px;
+        position: absolute;
+        top: -6px;
+        left: -59px;
+    }
+
+    &__star-2{
+        animation-name: opacity-star;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        width: 33px;
+        position: absolute;
+        top: 10px;
+        left: 342px;
+    }
+}
+
+.balloon{
+    opacity: 1;
+    z-index:1;
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    animation: up-down 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    // transition:all ease 5s;
+    transform: rotate(365deg);
+    
+
+    &__img{
+        width: 92px;
+        transform: scale(-1, 1)
+    }
+}
+
+.balloon-1{
+    z-index:1;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    animation: up-down 4s,left-to-right 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    // transition:all ease 5s;
+    transform: rotate(365deg);
+    
+
+    &__img{
+        width: 50px;
+        transform: scale(-1, 1)
+    }
+}
+
+.balloon-2{
+    z-index:1;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    animation: up-down 4s,right-to-left 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    // transition:all ease 5s;
+    transform: rotate(365deg);
+    
+
+    &__img{
+        width: 50px;
+        transform: scale(-1, 1)
+    }
+}
+
+
+
+
+
+@keyframes up-down{
+    0%{
+        top: 100px;
+        transform: rotate(365deg);
+    }
+
+    25%{
+        transform: rotate(355deg);
+        top: 0px;
+    }
+
+    50%{
+        transform: rotate(365deg);
+        top: -150px;
+    }
+
+    75%{
+        transform: rotate(355deg);
+        top: -300px;
+    }
+    100%{
+        top: -450px;
+    }
+}
+
+@keyframes left-to-right{
+    0%{
+
+    }
+    100%{
+        left:400px
+    }
+}
+
+@keyframes right-to-left{
+    0%{
+
+    }
+    100%{
+        left:-200px
+    }
+}
+
+@keyframes opacity-star{
+    0%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity:0.8;
+    }
+}

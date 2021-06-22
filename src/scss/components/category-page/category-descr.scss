@@ -1,0 +1,15 @@
+.category-descr{
+    display: flex;
+    margin-bottom: 12px;
+    align-self: flex-start;
+    &__bold{
+        font-size: 14px;
+        color: #67707a;
+        margin-right:3px;
+    }
+
+    &__current{
+        font-size: 14px;
+        color: #9ea5ae;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    @@include(url('./include/header.html'))
+    @@include(url('./include/navbar.html'))
+    <div class="content-wrapper">
+      <div class="left-content">
+        @@include(url('./include/carousel.html'))
+        @@include(url('./include/stories.html'))
+      </div>
+      <div class="right-content">
+        @@include(url('./include/toolbox.html'))
+        @@include(url('./include/congrats.html'))
+        @@include(url('./include/calendar.html'))
+        @@include(url('./include/vacancies.html'))
+        @@include(url('./include/photos.html'))
+        @@include(url('./include/kc.html'))
+        
+      </div>
+      
+    </div>
+    @@include(url('./include/bottom-mobile.html'))
+    <div class="celebrate">
+      <!-- <img class="celebrate__img" src="./images/congrats-image-1.png" alt="man"> -->
+      <div class="celebrate__image" style="background:url('./images/congrats-image-1.png') no-repeat;
+      background-size: cover;
+       width:260px;height: 260px; border: solid 3px #fff;border-radius: 50%;box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);">
+
+      </div>
+      <div class="balloon">
+        <img class="balloon__img" src="./images/balloon.png" alt="baloon">
+      </div>
+      <div class="balloon-1">
+        <img class="balloon__img" src="images/balloon-copy.png" alt="baloon">
+      </div>
+      <div class="balloon-2">
+        <img class="balloon__img" src="./images/balloon-copy-2.png" alt="baloon">   
+      </div>
+      <div class="celebrate__star">
+        <img src="./images/star-green.png" alt="star">
+      </div>
+      <div class="celebrate__star-1">
+        <img src="./images/star-light-green.png" alt="star">
+      </div>
+      <div class="celebrate__star-2">
+        <img src="./images/star-yellow.png" alt="star">
+      </div>
+    </div>
+
+  </body>
+</html>

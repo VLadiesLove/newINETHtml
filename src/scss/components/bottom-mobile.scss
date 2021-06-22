@@ -1,0 +1,47 @@
+.bottom-mobile{
+    z-index: 999;
+    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 55px;
+    justify-content: space-between;
+    background-color: #031627;
+    // margin-top: 19px;
+
+    &__item{
+        padding: 11px 10px 0px 10px;
+        display: flex;
+        flex: 1 1 20%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item--active{
+        background-color: #fff;
+        flex: 1 1 20%;
+    }
+
+    &__img{
+        height: 18px;
+        margin-bottom: 4px;
+    }
+
+    &__text{
+        color:#9ea5ae;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    &__text--active{
+        color: #031627;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:780px){
+    .bottom-mobile{
+        display: flex;
+    }
+}

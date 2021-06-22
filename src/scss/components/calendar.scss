@@ -1,0 +1,118 @@
+.calendar{
+    // height: 473px;
+    overflow: hidden;
+    // margin-bottom: 20px;
+    padding: 0 15px;
+    overflow: visible;
+
+    &__button-modal{
+        position: absolute;
+        top:12px;
+        right: -1px;
+    }
+    
+    &__item{
+        margin-top: 24px;
+        margin-left: 21px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f1f5fc;
+        padding-bottom: 26px;
+    }
+
+    &__item:last-child{
+        border-bottom: none;
+    }
+
+    &__date{    
+        display: flex;
+        flex-direction: column;
+        margin-top: 6px;
+        &-bold{
+            line-height: 1;
+            font-size: 34px;
+            font-weight: bold;
+            letter-spacing: -0.4px;
+            text-align: center;
+            color: #031627;
+        }
+    }
+    &__month{      
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: #657880;
+    }
+
+    &__info{
+        width: 210px;
+    }
+
+    &__header{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: #031627;
+        margin-bottom: 3px;
+    }
+
+    &__time{
+        font-size: 14px;
+        color: #687a82;
+    }
+
+    &__country{
+        font-size: 14px;
+        line-height: 1.57;
+        color: #687a82;
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 11px;
+        
+    }
+
+    &__bottom-item{
+        display: flex;
+        align-items: center;
+
+        &-img{
+            width: 14px;
+            height: 10px;
+            margin-right: 5px;
+        }   
+
+        &-text{
+            font-size: 16px;
+            text-align: center;
+            color: #cdcecf;
+
+        }  
+        .active{
+            color: #0d7dff;
+            margin-right: 5px;
+        } 
+
+        .cut-margin{
+            margin: 0;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:1023px){
+    .calendar__bottom-item{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1023px){
+    .calendar__item:last-child{
+        border-bottom: 1px solid #f1f5fc;
+    }
+}

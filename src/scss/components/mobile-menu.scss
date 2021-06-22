@@ -1,0 +1,145 @@
+.mobile-menu-container{
+    padding: 0px 16px 0px 20px;
+}
+.mobile-menu{
+    background-color:#031627;
+    height: 100vh;
+    width: 100%;
+    padding: 0px 0px 22px 0px;
+
+    &__header{
+        background-color:#031627;
+        z-index: 100;
+        padding-top: 14px;
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        padding-bottom: 15px;
+
+        &-content{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo{
+        display: flex;
+        align-items: center;
+
+        &-text{
+            font-size: 14px;
+            line-height: 1.43;
+            color: #ffffff;
+        }
+
+        &-image{
+            padding-left: 5px;
+            
+        }
+    }
+
+    &__back{
+        width: 20px;
+        margin-right: 17px;
+    }
+
+    &__close{
+        width: 20px;
+        margin-top: 4px;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__open{
+        background-color: #000;
+
+        &-item{
+            padding: 14px 0px 13px 0px;
+            border-bottom: 1px solid rgba(104, 144, 179,0.17);
+            width: 100%;
+            background-color: #000;
+        }
+    }
+
+    &__banner{
+        padding: 14px 19px;
+        width: 100%;
+        border-bottom: 1px solid rgba(104, 144, 179,0.17);
+    }
+
+    &__content{
+        background-color: #031627;
+    }
+
+    &__item{
+        padding: 14px 0px 13px 0px;
+        background-color: #031627;
+        border-bottom: 1px solid rgba(104, 144, 179,0.17);
+        width: 100%;
+
+        &-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        &--main-links{
+            background-color: #142a3e;
+            border-bottom: none;
+
+        }
+
+        &-left{
+            display: flex;
+        }
+        
+        &-left-img{
+            margin-right: 11px;
+        }
+
+        &-left-text{
+            text-align: left;
+            width: 244px;
+            margin-top: -2px;
+            font-size: 14px;
+            color: #b6bfca;
+        }
+
+        &-left-text--active{
+            color: #fff;
+        }
+    }
+
+    &__item--active{
+        background-color: #000;
+
+
+    }
+
+    &-translate{
+
+        &__item{
+            width: 100%;
+            padding: 15px 0px 10px 0px;
+            background-color: #fff;
+            border-bottom: 1px solid rgba(104, 144, 179,0.17);;
+
+            &-left-text{
+                font-size: 14px;
+                color: #687a82; 
+            }
+        }
+
+        &__item:last-child{
+            border-bottom: none;
+        }
+    }
+
+}
+
+.mobile-menu-translate{
+    background-color:#031627;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}

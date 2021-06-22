@@ -1,0 +1,30 @@
+.photos{
+    padding: 0 15px;
+    &__image{
+        margin: 20px 20px 33px 20px;
+    }
+
+    &__share{
+        width: 202px;
+        margin: 0 auto;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #0d7dff;
+        padding: 12px 0px 9px 0px;
+        margin-bottom: 5px;
+
+        &-text{
+            font-size: 13px;
+            font-weight: 900;
+            color: #0d7dff;
+            margin-right: 13px;
+        }
+
+        &-arrow{
+            width: 17px;
+            height: 12px;
+        }
+    }
+}

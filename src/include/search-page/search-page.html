@@ -1,0 +1,114 @@
+<div class="search-page-container">
+    <div class="search__header">
+
+        <button class="search__header-item search__header-item--active">
+            all (30)
+        </button>
+        <div class="search__header-delimeter"></div>
+        <button class="search__header-item ">
+            Articles (8)
+        </button>
+        <div class="search__header-delimeter"></div>
+        <button class="search__header-item ">
+            Videos (4)
+        </button>
+        <div class="search__header-delimeter"></div>
+        <button class="search__header-item ">
+            People (10)
+        </button>
+        <div class="search__header-delimeter"></div>
+        <button class="search__header-item ">
+            Events (8)
+        </button>
+    </div>
+    <div class="search__content">
+        <!-- <div class="search__header">
+
+            <button class="search__header-item search__header-item--active">
+                all (30)
+            </button>
+            <div class="search__header-delimeter"></div>
+            <button class="search__header-item ">
+                Articles (8)
+            </button>
+            <div class="search__header-delimeter"></div>
+            <button class="search__header-item ">
+                Videos (4)
+            </button>
+            <div class="search__header-delimeter"></div>
+            <button class="search__header-item ">
+                People (10)
+            </button>
+            <div class="search__header-delimeter"></div>
+            <button class="search__header-item ">
+                Events (8)
+            </button>
+        </div> -->
+        <div class="search__content-main">
+            <div class="search__results">
+                <div class="search__results-header">
+                    Search results for “IT”
+                </div>
+                @@include(url('./result-item.html'))
+                @@include(url('./result-item.html'))
+    
+            </div>
+            <div class="search__videos">
+                <div class="search__videos-header">
+                    Videos
+                </div>
+                @@include(url('./video-item.html'))
+                @@include(url('./video-item.html'))
+                @@include(url('./video-item.html'))
+    
+                <div class="search__button-wrapper">
+                    <button class="search__button-show-more">
+                        SHOW MORE
+                    </button>
+                </div>
+            </div>
+    
+            <div class="search__videos">
+                <div class="search__videos-header">
+                    People
+                </div>
+                @@include(url('./people-item.html'))
+                @@include(url('./people-item.html'))
+                @@include(url('./people-item.html'))
+    
+                <div class="search__button-wrapper">
+                    <button class="search__button-show-more">
+                        SHOW MORE
+                    </button>
+                </div>
+            </div>
+    
+            <div class="search__videos">
+                <div class="search__videos-header">
+                    Events
+                </div>
+                <div class="events-item-wrapper">
+                    @@include(url('./events-item.html'))
+                    @@include(url('./events-item.html'))
+                    @@include(url('./events-item.html'))
+                </div>
+                <div class="search__button-wrapper">
+                    <button class="search__button-show-more">
+                        SHOW MORE
+                    </button>
+                </div>
+            </div>
+            @@include(url('./result-item.html'))
+            @@include(url('./result-item.html'))
+            @@include(url('./result-item.html'))
+            @@include(url('./result-item.html'))
+        </div>
+        <div class="search__right-panel">
+            @@include(url('./tags-item.html'))
+            @@include(url('./tools.html'))
+        </div>
+        </div>
+        
+
+
+</div>
